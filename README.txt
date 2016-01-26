@@ -75,7 +75,7 @@ The ".body" attribute of this object contains the response in JSON format. If yo
 as the optional 2nd argument when instantiating the client.
 
 **r.body**
-   -Use this response object property retrieve the content of the search response. JSON by default.
+   -Use this response object property to retrieve the content of the search response. JSON by default.
 **r.status**
    -This property will give you access to the dialogues' HTTP status code, in case there are issues.
 **r.text**
