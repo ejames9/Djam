@@ -28,13 +28,13 @@ Usage
 ---------
 
 **db.artist_search(params)**
-    'params' is a dictionary, with: ``{"id": <int>, "name": <str>}`` as valid key, value options. These will serve
+    -'params' is a dictionary, with: ``{"id": <int>, "name": <str>}`` as valid key, value options. These will serve
     as the JamBase Artist search parameters.
 **db.venue_search(params)**
-    'params' is a dictionary, with: ``{"id": <int>, "zipCode": <int>, "radius"*: <int>}`` as valid key, value options.
+    -'params' is a dictionary, with: ``{"id": <int>, "zipCode": <int>, "radius"*: <int>}`` as valid key, value options.
     These are the JamBase Venue search parameters. * miles.
 **db.event_list(params)**
-    params' is a dictionary, with:
+    -'params' is a dictionary, with:
 
 .. code:: python
 
