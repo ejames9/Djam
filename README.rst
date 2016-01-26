@@ -18,7 +18,7 @@ Get a valid Developer API key at http://developer.jambase.com.
 
     import DjamBase
 
-     db = DjamBase.API("your_api_key")
+    db = DjamBase.API("your_api_key")
 
 Usage
 ---------
@@ -27,12 +27,11 @@ db.artist_search(params)
     as the JamBase Artist search parameters.
 db.venue_search(params)
     -'params' is a dictionary, with: ``{"id": <int>, "zipCode": <int>, "radius"*: <int>}`` as valid key, value options.
-    These are the JamBase Venue search parameters.
+    These are the JamBase Venue search parameters. * miles.
 db.event_list(params)
     -'params' is a dictionary, with:
 
-|                                    ``{``
-|                                    ``"id": <int>``,
+|                                    ``{"id": <int>``,
 |                                    ``"artist": <str>``,
 |                                    ``"artistId": <int>``,
 |                                    ``"band": <str>``,
@@ -78,7 +77,7 @@ r.binary
 ::
 
     json = r.body
-     print json
+    print json
 
 Example
 ---------
@@ -87,14 +86,11 @@ Example
 
     import DjamBase
 
-     db = DjamBase.API("your_api_key", "xml")
+    db = DjamBase.API("your_api_key", "xml")
 
-     r = db.event_list( {"name": "the foobar fighters", "radius": 200} )
-     code = r.status
-     print code      **<Response-200>**
+    r = db.event_list( {"name": "the foobar fighters", "radius": 200} )
+    code = r.status
+    print code      **<Response-200>**
 
-     xml = r.body
-     print xml
-
-
- *** miles
+    xml = r.body
+    print xml
