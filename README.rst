@@ -68,7 +68,7 @@ r.body
 r.status
    -This property will give you access to the dialogues' HTTP status code, in case there are issues.
 r.text
-   -This property will give you a stringified version of the JSON response.
+   -This property will give you a stringified version of the JSON/XML response.
 r.binary
    -This property will get you binary version of the response.
 
