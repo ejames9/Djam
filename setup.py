@@ -1,19 +1,23 @@
 
 from disutils.core import setup
 
+packages = ["DjamBase", "DjamBase.packages.requests"]
+
 setup(
     name = "DjamBase",
+    packages = packages,
     version = "1.0.0",
     author = "Eric James Foster",
     author_email = "maniphestival@gmail.com",
     url = ""
     description = "A Thin JamBase API Client library for Django/Python Applications.",
+    license = "MIT",
     classifiers = [
         "Programming Language :: Python",
         "Programming Language :: Python :: 3",
         "Development Status :: 4 - Beta",
         "Intended Audience :: Developers",
-        "License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)",
+        "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
         "Topic :: Software Development :: Libraries :: Python Modules",
         ],
