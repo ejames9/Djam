@@ -8,7 +8,7 @@ long_description = open("README.txt").read()
 setup(
     name = "DjamBase",
     packages = packages,
-    version = "1.0.5",
+    version = "1.0.16",
     author = "Eric James Foster",
     author_email = "maniphestival@gmail.com",
     description = "A Thin JamBase API Client library for Django/Python Applications.",

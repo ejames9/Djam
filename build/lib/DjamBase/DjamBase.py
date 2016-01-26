@@ -12,7 +12,6 @@ URL: "https://pypi.python.org/pypi/DjamBase/1.0.0"
 import requests
 
 
-
 class API(object):
 
     api_key = ""
@@ -30,7 +29,6 @@ class API(object):
         return Response(r)
 
 
-
     def artist_search(self, params):
         url = self.base_url + "artists?" + "o=%s&api_key=%s"  % (self.format, self.api_key.lower())
         r = requests.get(url, params=params)
@@ -44,7 +42,6 @@ class API(object):
         r = requests.get(url, params=params)
         print "Status Code: " + str(r.status_code), "--- URL: " + r.url
         return Response(r)
-
 
 
 class Response(object):
