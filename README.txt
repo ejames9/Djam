@@ -6,6 +6,7 @@ DjamBase
 ==========
 
 .. image:: http://images.jambase.com/logos/jambase140x70.gif
+   :target: http://www.jambase.com
 
 **A Python Jambase API Client Library**
 
