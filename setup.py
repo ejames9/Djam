@@ -1,17 +1,21 @@
 
-from disutils.core import setup
+from distutils.core import setup
 
 packages = ["DjamBase", "DjamBase.packages.requests"]
+
+long_description = open("README.txt").read()
 
 setup(
     name = "DjamBase",
     packages = packages,
-    version = "1.0.0",
+    version = "1.0.5",
     author = "Eric James Foster",
     author_email = "maniphestival@gmail.com",
-    url = ""
     description = "A Thin JamBase API Client library for Django/Python Applications.",
+    requires = ["requests (>=2.9.1)"],
     license = "MIT",
+    url = "https://pypi.python.org/pypi/DjamBase",
+    keywords = "JamBase search event events concert concerts music bands artists HTTP query api festival list",
     classifiers = [
         "Programming Language :: Python",
         "Programming Language :: Python :: 3",
@@ -20,48 +24,7 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
         "Topic :: Software Development :: Libraries :: Python Modules",
+        "Topic :: Internet :: WWW/HTTP :: Indexing/Search",
         ],
-    long_description = """\
-===========================
-JamBase API Client Library
-===========================
-
-Getting Started
-----------------
-Get a valid Developer API key at http://developer.jambase.com. ::
-
-    import DjamBase
-
-    db = DjamBase("your_api_key")
-
-Usage
-------
-``db.artist_search(params)``
-    -params is a dictionary, with ``{"id": *integer*, "name": *string*}`` as key, value options. These will serve
-    as the search parameters.
-``db.venue_search(params)``
-    -params is a dictionary, with ``{"id": *integer*, "zipCode": *integer*, "radius": *integer*}`` as key, value options.
-``db.event_list(params)``
-    -params is a dictionary, with`` {"id": *integer*,
-                                   "artist": *string*,
-                                   "artistId": *integer*,
-                                   "band": *string*,
-                                   "bandId": *integer*,
-                                   "venueId": *integer*,
-                                   "zipCode": *integer*,
-                                   "radius": *integer*,
-                                   "startDate": *YYYY-MM-DD*,
-                                   "endDate": *YYYY-MM-DD*} ``as possible key, value options.
-
-Use any combination of the available parameters, per function, that you like, depending on the
-desired results. All keys are written in "camelCase".
-
-Use as below: ::
-
-    r = db.event_list( {"name": "the foobar fighters", "radius": 200})
-
-
-The variable "r" will contain a json response object. I will incorporate xml soon.
-
-"""
+    long_description = long_description
 )

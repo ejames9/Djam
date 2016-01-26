@@ -1,9 +1,9 @@
 
 
+==========
+DjamBase
+==========
 
-            ==========
-             DjamBase
-            ==========
 **A Python Jambase API Client Library**
 
 Getting Started
@@ -30,6 +30,7 @@ db.venue_search(params)
     These are the JamBase Venue search parameters.
 db.event_list(params)
     -'params' is a dictionary, with:
+
 |                                    ``{``
 |                                    ``"id": <int>``,
 |                                    ``"artist": <str>``,
@@ -38,9 +39,9 @@ db.event_list(params)
 |                                    ``"bandId": <int>``,
 |                                    ``"venueId": <int>``,
 |                                    ``"zipCode": <int>``,
-|                                    ``"radius"*: <int>``,
+|                                    ``"radius": <int>``,
 |                                    ``"startDate": <YYYY-MM-DD>``,
-|                                    ``"endDate": <YYYY-MM-DD>   } ``as possible valid key, value options.
+|                                    ``"endDate": <YYYY-MM-DD>   }`` as possible valid key, value options.
  These are the JamBase Event search parameters.
 
 Use any combination of a functions' available parameters that you like, depending on the
